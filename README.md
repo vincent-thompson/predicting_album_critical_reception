@@ -1,15 +1,15 @@
-#Album Score Predictor
+# Album Score Predictor
 
-###Description
+### Description
 
 My goal with this project is to see whether or not I can predict the critical reception of an album using data scraped from [metacritic](https://www.metacritic.com) and audio features collected from the Spotify Web API with the help of the Python library [Spotipy](https://spotipy.readthedocs.io/en/2.16.0/)
 
 
-###Target Variable
+### Target Variable
 
 - Metascore, a weighted average of critic reviews, [as aggregrated by metacritic](https://www.metacritic.com/about-metascores)
 
-###Features 
+### Features 
 Each of these was looked into, but not all of them ended up being used in the final model
 
 - Release Month 
