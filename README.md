@@ -7,7 +7,7 @@ My goal with this project is to see whether or not I can predict the critical re
 
 ### Target Variable
 
-- Metascore, a weighted average of critic reviews, [as aggregrated by metacritic](https://www.metacritic.com/about-metascores)
+- Metascore, a weighted average of critic reviews, [as aggregrated by metacritic](https://www.metacritic.com/about-metascores) (range: 0 - 100)
 
 ### Features 
 Each of these was looked into, but not all of them ended up being used in the final model
@@ -31,4 +31,22 @@ Audio features as calculated by [Spotify](https://developer.spotify.com/document
 - Speechiness: A measure from 0 to 1 representing the ratio of presence of spoken words to the presence of music
 - Valence: A measure from 0 to 1 describing the musical positiveness/happiness of a track
 - Tempo: Overall estimated tempo of a track in BPM
+
+### Data Used
+- Scraped data for approximately 3,000 albums from metacritic's [new releases](https://www.metacritic.com/browse/albums/release-date/new-releases/date).
+- Collected additional audio features from Spotify's API through a python library called [Spotipy](https://spotipy.readthedocs.io/en/2.16.0/#)
+
+### Tools Used
+- Python
+- [NumPy](https://numpy.org/doc/stable/#) and [Pandas](https://pandas.pydata.org/docs/index.html): data structures, data cleaning
+- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#): HTML web scraping
+- [Scikit-learn](https://scikit-learn.org/stable/index.html) and [Statsmodels](https://www.statsmodels.org/dev/index.html): Model fitting, predicting, evaluation, and some pre-processing
+- [Seaborn](https://seaborn.pydata.org/index.html#) and [Matplotlib](https://matplotlib.org/): visualizations
+- [Spotipy](https://spotipy.readthedocs.io/en/2.16.0/#): interacting with Spotify's Web API
+
+### Possible Impacts 
+- Identifying factors that can increase or decrease the critical perception of a release
+
+
+
 
